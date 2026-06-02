@@ -29,23 +29,15 @@ const rightNav = [
   {
     label: "Blogs",
     href: "/blog",
-    children: [
-      { label: "Best Playgrounds", href: "/blog/best-playgrounds-vancouver" },
-      { label: "Rainy Day Activities", href: "/blog/rainy-day-indoor-activities" },
-      { label: "Family Hikes", href: "/blog/family-hikes-vancouver" },
-      { label: "Free Things to Do", href: "/blog/free-things-to-do-spring" },
-      { label: "Toddler Activities", href: "/blog/toddler-activities-vancouver" },
-      { label: "Splash Pads", href: "/blog/best-splash-pads-vancouver" },
-      { label: "All Blogs", href: "/blog" },
-    ],
   },
   {
     label: "Guides",
-    href: "/seasonal-guide",
+    href: "/blog",
     children: [
       { label: "Seasonal Guide", href: "/seasonal-guide" },
-      { label: "Rainy Day Guide", href: "/rainy-day-activities" },
+      { label: "Rainy Day Activities", href: "/rainy-day-activities" },
       { label: "Summer Camps", href: "/summer-camps" },
+      { label: "All Guides", href: "/blog" },
     ],
   },
 ];
