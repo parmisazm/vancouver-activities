@@ -105,7 +105,7 @@ export default function RestaurantsPage() {
             Help other Vancouver families find great places to eat. Submit your favourite family-friendly restaurant.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/submit-event" className="px-8 py-3.5 bg-white text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors">
+            <Link href="/submit-event" className="px-8 py-3.5 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>
               Submit a Restaurant
             </Link>
             <Link href="/blog" className="px-8 py-3.5 border-2 border-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-white hover:text-[#2d5016] transition-colors" style={{ color: "#ffffff" }}>

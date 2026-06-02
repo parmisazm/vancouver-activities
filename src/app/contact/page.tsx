@@ -131,7 +131,7 @@ export default function ContactPage() {
                       placeholder="Tell us what you need..."
                     />
                   </div>
-                  <button type="submit" className="w-full py-3 bg-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded-lg hover:bg-[#3d6b20] transition-colors" style={{ color: "#ffffff" }}>
+                  <button type="submit" className="w-full py-3 btn-primary font-heading text-sm font-semibold uppercase tracking-wider rounded">
                     Send Message
                   </button>
                 </form>
@@ -152,7 +152,6 @@ export default function ContactPage() {
               <div className="flex gap-3">
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white rounded-lg shadow text-sm font-semibold text-gray-600 hover:text-[#5f8f4a] transition-colors">Instagram</a>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white rounded-lg shadow text-sm font-semibold text-gray-600 hover:text-[#5f8f4a] transition-colors">Facebook</a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white rounded-lg shadow text-sm font-semibold text-gray-600 hover:text-[#5f8f4a] transition-colors">Twitter</a>
               </div>
             </div>
           </div>
@@ -169,7 +168,7 @@ export default function ContactPage() {
             Use our event submission form to get your Vancouver event listed on our calendar.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/submit-event" className="px-8 py-3.5 bg-white text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors">
+            <Link href="/submit-event" className="px-8 py-3.5 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>
               Submit Event
             </Link>
             <Link href="/about" className="px-8 py-3.5 border-2 border-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-white hover:text-[#2d5016] transition-colors" style={{ color: "#ffffff" }}>

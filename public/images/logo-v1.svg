@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 60" width="380" height="60">
+  <defs>
+    <linearGradient id="pin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5f8f4a"/>
+      <stop offset="100%" style="stop-color:#2d5016"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(2, 2)">
+    <path d="M24 0C11 0 0 10.5 0 23.5C0 38 24 56 24 56C24 56 48 38 48 23.5C48 10.5 37 0 24 0Z" fill="url(#pin)"/>
+    <path d="M12 32L19 18L23 24L28 14L36 32Z" fill="#ffffff" opacity="0.95"/>
+    <circle cx="20" cy="30" r="2.5" fill="#ffffff" opacity="0.8"/>
+    <circle cx="28" cy="29" r="3" fill="#ffffff" opacity="0.8"/>
+    <circle cx="24" cy="33" r="2" fill="#ffffff" opacity="0.8"/>
+  </g>
+  <text x="60" y="27" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5"><tspan fill="#1a1a1a">Vancouver</tspan><tspan fill="#2d5016" dx="6">Activities</tspan></text>
+  <text x="60" y="48" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="600" fill="#999" letter-spacing="2.5">YOUR LOCAL GUIDE TO FAMILY FUN</text>
+</svg>

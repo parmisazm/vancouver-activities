@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 50" width="340" height="50">
+  <text x="0" y="32" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="30" letter-spacing="-1"><tspan font-weight="800" fill="#1a1a1a">vancouver</tspan><tspan font-weight="300" fill="#1a1a1a">act</tspan><tspan font-weight="300" fill="#1a1a1a">ı</tspan><tspan font-weight="300" fill="#1a1a1a">vities</tspan></text>
+  <circle cx="225" cy="11" r="4.5" fill="#e85d3a"/>
+  <line x1="0" y1="40" x2="60" y2="40" stroke="#e85d3a" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

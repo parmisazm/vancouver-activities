@@ -6,9 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="lg:col-span-1">
-          <h3 className="font-heading text-xl font-bold text-white mb-4">
-            Vancouver Activities
-          </h3>
+          <img src="/images/logo.jpg" alt="Vancouver Activities" className="h-20 rounded-lg mb-4" />
           <p className="text-sm leading-relaxed text-gray-500 mb-5">
             Your family&apos;s guide to the best activities, events, and weekend fun in Vancouver, BC. Find kid-friendly things to do, seasonal guides, and local hidden gems.
           </p>

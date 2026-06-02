@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 55" width="380" height="55">
+  <!-- Playful "VA" monogram with hidden mountain -->
+  <g transform="translate(0, 6)">
+    <!-- The V is a mountain valley, the A is a peak -->
+    <path d="M3 3L18 38L33 3" fill="none" stroke="#2d5016" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25 3L40 38" fill="none" stroke="#5f8f4a" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="30" y1="24" x2="40" y2="24" stroke="#5f8f4a" stroke-width="3" stroke-linecap="round"/>
+    <!-- Playful sun dot -->
+    <circle cx="18" cy="4" r="4" fill="#e8b84b"/>
+  </g>
+  <!-- Wordmark — elegant weight mix -->
+  <text x="54" y="30" font-family="'Georgia', 'Times New Roman', serif" font-size="28" fill="#1a1a1a" letter-spacing="0.5"><tspan font-weight="400" font-style="italic">vancouver</tspan><tspan font-weight="700" fill="#2d5016" dx="6">activities</tspan></text>
+  <!-- Minimal tagline -->
+  <text x="55" y="47" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" font-weight="600" fill="#b0b0b0" letter-spacing="4">LOCAL FAMILY GUIDE</text>
+</svg>

@@ -234,7 +234,7 @@ export default function SubmitEventPage() {
                 <p className="text-sm leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.85)" }}>
                   Having trouble submitting your event? Contact us directly and we will help you get it listed.
                 </p>
-                <Link href="/contact" className="inline-block px-5 py-2.5 bg-white text-[#2d5016] font-heading text-sm font-semibold rounded hover:bg-gray-100 transition-colors">
+                <Link href="/contact" className="inline-block px-5 py-2.5 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>
                   Contact Us
                 </Link>
               </div>
@@ -253,7 +253,7 @@ export default function SubmitEventPage() {
             Check out what is already happening in Vancouver before submitting your event.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/events" className="px-8 py-3.5 bg-white text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors">
+            <Link href="/events" className="px-8 py-3.5 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>
               All Events
             </Link>
             <Link href="/this-weekend" className="px-8 py-3.5 border-2 border-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-white hover:text-[#2d5016] transition-colors" style={{ color: "#ffffff" }}>

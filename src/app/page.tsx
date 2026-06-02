@@ -41,44 +41,44 @@ const neighbourhoods = [
 ];
 
 const quickLinks = [
-  { label: "What's on this weekend?", href: "/this-weekend", icon: "📅" },
-  { label: "It's raining — now what?", href: "/rainy-day-activities", icon: "🌧️" },
-  { label: "Free activities today", href: "/free-things-to-do", icon: "🆓" },
-  { label: "Birthday party venues", href: "/birthday-parties", icon: "🎂" },
-  { label: "Easy family hikes", href: "/outdoor-adventures", icon: "🥾" },
-  { label: "Summer camp finder", href: "/summer-camps", icon: "☀️" },
+  { label: "This Weekend", href: "/this-weekend" },
+  { label: "Rainy Day Ideas", href: "/rainy-day-activities" },
+  { label: "Free Activities", href: "/free-things-to-do" },
+  { label: "Birthday Parties", href: "/birthday-parties" },
+  { label: "Family Hikes", href: "/outdoor-adventures" },
+  { label: "Summer Camps", href: "/summer-camps" },
 ];
 
 const localTips = [
   {
     tip: "Skip Capilano, go to Lynn Canyon",
     detail: "Same suspension bridge experience, completely free. The 30 Foot Pool swimming hole is a bonus.",
-    icon: "💰"
+    svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
   },
   {
     tip: "Rent bikes at Denman, not Stanley Park",
     detail: "Better rates, same Seawall access. Ride the full 10km loop — budget 1.5 hours with kids.",
-    icon: "🚲"
+    svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
   },
   {
     tip: "Granville Island on a weekday morning",
     detail: "Weekend crowds are brutal. Go Tuesday-Thursday before 11am for the real experience.",
-    icon: "🏝️"
+    svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
   },
   {
     tip: "Kits Pool closes Labour Day",
     detail: "Canada's longest saltwater pool is heated and has ocean views. Go before September.",
-    icon: "🏊"
+    svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg>
   },
   {
     tip: "The Aquabus is $4 and kids love it",
     detail: "Tiny rainbow ferries across False Creek. Way more fun than walking to Granville Island.",
-    icon: "⛴️"
+    svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" /></svg>
   },
   {
     tip: "Science World does $5 Tuesdays after 5pm",
     detail: "Pay-what-you-can evening admission. Same exhibits, fraction of the price and crowds.",
-    icon: "🔬"
+    svg: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z" /></svg>
   },
 ];
 
@@ -87,18 +87,18 @@ export default function Home() {
     <>
       <HeroSlider />
 
-      {/* Quick Discovery */}
-      <section className="py-10 px-5 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+      {/* Quick Discovery — Tag Pills */}
+      <section className="py-6 px-5 bg-[#f8f9fa] border-b border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center justify-center gap-2.5 flex-nowrap">
+            <span className="text-sm text-gray-400 font-medium mr-1">Popular:</span>
             {quickLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className="flex flex-col items-center text-center p-4 rounded-xl bg-[#f8f9fa] hover:bg-[#5f8f4a]/10 hover:border-[#5f8f4a]/30 border border-transparent transition-all duration-200 group"
+                className="px-4 py-2 rounded-full text-xs font-semibold text-gray-600 bg-white border border-gray-200 hover:border-[#2d5016] hover:text-[#2d5016] hover:shadow-md transition-all duration-200 whitespace-nowrap"
               >
-                <span className="text-2xl mb-2">{link.icon}</span>
-                <span className="text-xs font-semibold text-gray-600 group-hover:text-[#2d5016] leading-tight">{link.label}</span>
+                {link.label}
               </Link>
             ))}
           </div>
@@ -122,8 +122,8 @@ export default function Home() {
               Every recommendation comes from someone who&apos;s actually taken their kids there. We know which playgrounds have shade, which restaurants actually have high chairs, and which &quot;easy&quot; hikes are lying.
             </p>
             <div className="flex gap-3 mt-6">
-              <Link href="/things-to-do" className="px-6 py-3 bg-[#2d5016] text-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#1a3a0a] transition-colors">Browse Activities</Link>
-              <Link href="/this-weekend" className="px-6 py-3 border-2 border-[#2d5016] text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] hover:text-white transition-colors">This Weekend</Link>
+              <Link href="/things-to-do" className="px-6 py-3 btn-primary font-heading text-sm font-semibold uppercase tracking-wider rounded">Browse Activities</Link>
+              <Link href="/this-weekend" className="px-6 py-3 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>This Weekend</Link>
             </div>
           </div>
           <div className="flex-1">
@@ -166,7 +166,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {localTips.map((tip) => (
               <div key={tip.tip} className="bg-white border border-gray-100 rounded-xl p-6 hover:border-[#5f8f4a]/30 hover:shadow-lg transition-all duration-300">
-                <span className="text-3xl mb-3 block">{tip.icon}</span>
+                <div className="w-12 h-12 rounded-xl bg-[#A0522D] flex items-center justify-center mb-4 text-white">
+                  <div className="w-6 h-6">{tip.svg}</div>
+                </div>
                 <h3 className="font-heading text-base font-bold mb-2">{tip.tip}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{tip.detail}</p>
               </div>
@@ -185,7 +187,7 @@ export default function Home() {
           <p className="text-lg leading-relaxed" style={{ color: "rgba(255,255,255,0.9)" }}>
             Vancouver rains. A lot. That&apos;s why we built an entire section of indoor activities — from Science World and trampoline parks to pottery classes and indoor swimming pools. Rain doesn&apos;t stop Vancouver families.
           </p>
-          <Link href="/rainy-day-activities" className="inline-block mt-8 px-8 py-4 bg-[#2d5016] text-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#1a3a0a] transition-colors">
+          <Link href="/rainy-day-activities" className="inline-block mt-8 px-8 py-4 btn-primary font-heading text-sm font-semibold uppercase tracking-wider rounded">
             40+ Rainy Day Ideas →
           </Link>
         </div>
@@ -199,7 +201,7 @@ export default function Home() {
               <h2 className="font-heading text-3xl md:text-4xl font-bold mb-2">Happening This Weekend</h2>
               <p className="text-gray-500">Updated every Thursday. Bookmark this page.</p>
             </div>
-            <Link href="/this-weekend" className="hidden md:inline-block px-6 py-3 bg-[#2d5016] text-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#1a3a0a] transition-colors">
+            <Link href="/this-weekend" className="hidden md:inline-block px-6 py-3 btn-primary font-heading text-sm font-semibold uppercase tracking-wider rounded">
               See All
             </Link>
           </div>
@@ -221,7 +223,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-6 md:hidden">
-            <Link href="/this-weekend" className="px-6 py-3 bg-[#2d5016] text-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#1a3a0a] transition-colors">
+            <Link href="/this-weekend" className="px-6 py-3 btn-primary font-heading text-sm font-semibold uppercase tracking-wider rounded">
               See All Weekend Events
             </Link>
           </div>
@@ -288,7 +290,7 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <Link href="/about" className="px-7 py-3.5 bg-[#2d5016] text-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#1a3a0a] transition-colors">About Us</Link>
+            <Link href="/about" className="px-7 py-3.5 btn-primary font-heading text-sm font-semibold uppercase tracking-wider rounded">About Us</Link>
           </div>
         </div>
       </section>
@@ -299,8 +301,8 @@ export default function Home() {
           <h2 className="font-heading text-3xl font-bold mb-3" style={{ color: "#ffffff" }}>Your Weekend, Sorted. Every Thursday.</h2>
           <p className="mb-8" style={{ color: "rgba(255,255,255,0.8)" }}>One email. The best family activities happening this weekend in Vancouver. No spam, no tourism fluff — just the good stuff from parents who live here.</p>
           <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input type="email" placeholder="Your email address" className="flex-1 px-5 py-3.5 rounded text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white/50" />
-            <button type="submit" className="px-8 py-3.5 bg-white text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors">Subscribe</button>
+            <input type="email" placeholder="Your email address" className="flex-1 px-5 py-3.5 rounded text-sm focus:outline-none focus:ring-2 focus:ring-white/50" style={{ color: "#333", backgroundColor: "#ffffff" }} />
+            <button type="submit" className="px-8 py-3.5 bg-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors" style={{ color: "#2d5016" }}>Subscribe</button>
           </form>
           <p className="mt-4 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>Join 2,000+ Vancouver parents. Unsubscribe anytime.</p>
         </div>

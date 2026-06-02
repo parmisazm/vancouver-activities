@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 58" width="440" height="58">
+  <!-- Wordmark with tiny trees growing from the dots of the i's -->
+
+  <!-- "vancouver" in bold -->
+  <text x="0" y="35" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="800" fill="#1a1a1a" letter-spacing="-1">vancouver</text>
+
+  <!-- "act" -->
+  <text x="214" y="35" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="300" fill="#3a3a3a" letter-spacing="-1">act</text>
+
+  <!-- "i" stem only (no dot) -->
+  <rect x="261" y="21" width="3.2" height="15" rx="1" fill="#3a3a3a"/>
+
+  <!-- First tree growing from the i dot -->
+  <polygon points="262.5,5 257,17 259,17 255,20 258,20 268,20 265,20 261,17 263,17" fill="#5f8f4a"/>
+  <polygon points="262.5,8 258.5,15 260,15 257,18 259,18 266,18 264,18 261,15 262.5,15" fill="#2d5016"/>
+
+  <!-- "v" -->
+  <text x="267" y="35" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="300" fill="#3a3a3a" letter-spacing="-1">v</text>
+
+  <!-- "i" stem only (no dot) -->
+  <rect x="287" y="21" width="3.2" height="15" rx="1" fill="#3a3a3a"/>
+
+  <!-- Second tree — slightly different, taller -->
+  <polygon points="288.5,3 283,16 285,16 281,19 284,19 293,19 290,19 286,16 288,16" fill="#6db356"/>
+  <polygon points="288.5,6 285,14 286.5,14 283.5,17.5 285.5,17.5 291.5,17.5 289.5,17.5 286.5,14 288,14" fill="#2d5016"/>
+
+  <!-- "t" -->
+  <text x="292" y="35" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="300" fill="#3a3a3a" letter-spacing="-1">t</text>
+
+  <!-- "i" stem only (no dot) -->
+  <rect x="307" y="21" width="3.2" height="15" rx="1" fill="#3a3a3a"/>
+
+  <!-- Third tree — smallest, different shade -->
+  <polygon points="308.5,7 304.5,17 306,17 303,19.5 305.5,19.5 311.5,19.5 309,19.5 306,17 307.5,17" fill="#8fd47a"/>
+  <polygon points="308.5,9.5 305.5,15.5 307,15.5 304.5,18 306.5,18 310.5,18 308.5,18 306,15.5 307.5,15.5" fill="#5f8f4a"/>
+
+  <!-- "es" -->
+  <text x="312" y="35" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="300" fill="#3a3a3a" letter-spacing="-1">es</text>
+
+  <!-- Tagline -->
+  <text x="0" y="52" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="600" fill="#aaa" letter-spacing="3">YOUR LOCAL GUIDE TO FAMILY FUN</text>
+</svg>

@@ -131,9 +131,6 @@ export default function AboutPage() {
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white rounded-lg shadow-md text-sm font-heading font-semibold text-gray-700 hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
               Facebook
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white rounded-lg shadow-md text-sm font-heading font-semibold text-gray-700 hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-              Twitter
-            </a>
           </div>
         </div>
       </section>
@@ -148,7 +145,7 @@ export default function AboutPage() {
             Start browsing our activity guides or check out what is happening in Vancouver this weekend.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/things-to-do" className="px-8 py-3.5 bg-white text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors">
+            <Link href="/things-to-do" className="px-8 py-3.5 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>
               Explore Activities
             </Link>
             <Link href="/contact" className="px-8 py-3.5 border-2 border-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-white hover:text-[#2d5016] transition-colors" style={{ color: "#ffffff" }}>

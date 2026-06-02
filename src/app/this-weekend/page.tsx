@@ -66,7 +66,7 @@ export default function ThisWeekendPage() {
                   const timeStr = `${sd.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })} at ${hour}:${m < 10 ? "0" : ""}${m} ${ampm}`;
 
                   return (
-                    <a key={evt.id} href={evt.url || "#"} className="bg-white rounded-xl shadow-md overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+                    <div key={evt.id} className="bg-white rounded-xl shadow-md overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
                       <div className="relative h-48 overflow-hidden">
                         {evt.image ? (
                           <img src={evt.image} alt={evt.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
@@ -91,7 +91,7 @@ export default function ThisWeekendPage() {
                           </div>
                         )}
                       </div>
-                    </a>
+                    </div>
                   );
                 })}
               </div>
@@ -103,7 +103,7 @@ export default function ThisWeekendPage() {
                 We update this page every Thursday with the latest events and activities for the upcoming weekend. In the meantime, browse our other guides for inspiration.
               </p>
               <div className="flex gap-4 justify-center flex-wrap">
-                <Link href="/events" className="px-8 py-3.5 bg-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#3d6b20] transition-colors" style={{ color: "#ffffff" }}>
+                <Link href="/events" className="px-8 py-3.5 btn-primary font-heading text-sm font-semibold uppercase tracking-wider rounded">
                   All Events
                 </Link>
                 <Link href="/things-to-do" className="px-8 py-3.5 border-2 border-[#2d5016] text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] hover:text-white transition-colors">
@@ -148,7 +148,7 @@ export default function ThisWeekendPage() {
             Submit your Vancouver event and reach thousands of local families looking for weekend plans.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/submit-event" className="px-8 py-3.5 bg-white text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors">
+            <Link href="/submit-event" className="px-8 py-3.5 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>
               Submit Event
             </Link>
             <Link href="/events" className="px-8 py-3.5 border-2 border-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-white hover:text-[#2d5016] transition-colors" style={{ color: "#ffffff" }}>

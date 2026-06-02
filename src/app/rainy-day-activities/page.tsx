@@ -124,7 +124,7 @@ export default function RainyDayPage() {
               <div key={pick.name} className="bg-white rounded-xl shadow-md overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300 text-center">
                 <img src={pick.image} alt={pick.name} className="w-full h-32 object-cover" />
                 <div className="p-4">
-                  <span className="inline-block w-8 h-8 bg-[#2d5016] text-white rounded-full text-sm font-bold leading-8 mb-2">{idx + 1}</span>
+                  <span className="inline-block w-8 h-8 bg-[#2d5016] rounded-full text-sm font-bold leading-8 mb-2" style={{ color: "#ffffff" }}>{idx + 1}</span>
                   <h3 className="font-heading text-sm font-bold mb-1">{pick.name}</h3>
                   <p className="text-xs text-gray-500 leading-relaxed">{pick.why}</p>
                 </div>
@@ -200,7 +200,7 @@ export default function RainyDayPage() {
             When the rain stops, Vancouver's outdoor adventures are unbeatable. Check out our outdoor guide for hikes, beaches, and nature walks.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/outdoor-adventures" className="px-8 py-3.5 bg-white text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors">
+            <Link href="/outdoor-adventures" className="px-8 py-3.5 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>
               Outdoor Adventures
             </Link>
             <Link href="/indoor-activities" className="px-8 py-3.5 border-2 border-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-white hover:text-[#2d5016] transition-colors" style={{ color: "#ffffff" }}>

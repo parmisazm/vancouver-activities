@@ -73,13 +73,15 @@ export default function HeroSlider() {
               <div className="flex gap-4 justify-center flex-wrap">
                 <Link
                   href={slide.btn1.href}
-                  className="px-8 py-4 bg-[#2d5016] text-white font-heading text-sm font-semibold uppercase tracking-wider rounded border-2 border-[#2d5016] hover:bg-[#1a3a0a] hover:border-[#1a3a0a] transition-all"
+                  className="px-8 py-4 font-heading text-sm font-semibold uppercase tracking-wider rounded border-2 transition-all"
+                  style={{ backgroundColor: "#2d5016", color: "#ffffff", borderColor: "#2d5016" }}
                 >
                   {slide.btn1.label}
                 </Link>
                 <Link
                   href={slide.btn2.href}
-                  className="px-8 py-4 bg-transparent text-white font-heading text-sm font-semibold uppercase tracking-wider rounded border-2 border-white/70 hover:bg-white/15 hover:border-white transition-all"
+                  className="px-8 py-4 font-heading text-sm font-semibold uppercase tracking-wider rounded border-2 transition-all hover:opacity-90"
+                  style={{ backgroundColor: "#ffffff", color: "#2d5016", borderColor: "#ffffff" }}
                 >
                   {slide.btn2.label}
                 </Link>

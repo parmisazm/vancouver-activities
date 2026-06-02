@@ -99,7 +99,7 @@ export default function SitemapPage() {
           <p className="mb-8 text-lg" style={{ color: "rgba(255,255,255,0.85)" }}>
             Get in touch and we will help you find the perfect activity for your family.
           </p>
-          <Link href="/contact" className="px-8 py-3.5 bg-white text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors">
+          <Link href="/contact" className="px-8 py-3.5 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>
             Contact Us
           </Link>
         </div>

@@ -25,9 +25,56 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: inherit;
-  transition: color 0.2s;
+  text-decoration: none;
 }
 
-a:hover {
-  color: var(--color-primary);
+/* === BULLETPROOF BUTTON CLASSES === */
+.btn-primary {
+  background-color: #2d5016 !important;
+  color: #ffffff !important;
+  border: 2px solid #2d5016 !important;
+}
+.btn-primary:hover {
+  background-color: #1a3a0a !important;
+  border-color: #1a3a0a !important;
+  color: #ffffff !important;
+}
+.btn-secondary {
+  background-color: #ffffff !important;
+  color: #2d5016 !important;
+  border: 2px solid #2d5016 !important;
+}
+.btn-secondary:hover {
+  background-color: #2d5016 !important;
+  color: #ffffff !important;
+}
+.btn-white {
+  background-color: #ffffff !important;
+  color: #2d5016 !important;
+  border: 2px solid #ffffff !important;
+}
+.btn-white:hover {
+  background-color: rgba(255,255,255,0.9) !important;
+  color: #2d5016 !important;
+}
+
+/* === GLOBAL OVERRIDES FOR INLINE-STYLED ELEMENTS === */
+/* Any element with inline style color stays as-is */
+[style*="color"] {
+  color: unset;
+}
+
+/* Green bg sections — all direct text is white */
+section[class*="bg-[#2d5016]"] > div,
+section[class*="bg-[#2d5016]"] h2,
+section[class*="bg-[#2d5016]"] p,
+section[class*="bg-[#2d5016]"] form {
+  color: #ffffff;
+}
+
+/* But white elements inside keep their own styling */
+section[class*="bg-[#2d5016]"] input,
+section[class*="bg-[#2d5016]"] button[class*="bg-white"],
+section[class*="bg-[#2d5016]"] a[class*="bg-white"] {
+  color: #2d5016 !important;
 }

@@ -33,7 +33,7 @@ const creative = [
 
 const swimming = [
   { name: "Watermania (Richmond)", type: "Swimming", desc: "Wave pool, lazy river, waterslides, hot tub, and toddler splash zone. One of Metro Vancouver's best indoor aquatic centres.", image: "/images/indoor-swim.jpg", age: "All Ages" },
-  { name: "Newton Wave Pool (Surrey)", type: "Swimming", desc: "Wave pool, waterslide, and warm leisure pool. Affordable drop-in rates. Family swim sessions on weekends.", image: "/images/kids-swimming.jpg", age: "All Ages" },
+  { name: "Newton Wave Pool (Surrey)", type: "Swimming", desc: "Wave pool, waterslide, and warm leisure pool. Affordable drop-in rates. Family swim sessions on weekends.", image: "/images/newton-wave-pool.jpg", age: "All Ages" },
 ];
 
 export default function IndoorActivitiesPage() {
@@ -182,7 +182,7 @@ export default function IndoorActivitiesPage() {
             Many Vancouver libraries, community centres, and galleries offer free admission. Check out our free activities guide for budget-friendly indoor fun.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/free-things-to-do" className="px-8 py-3.5 bg-white text-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-gray-100 transition-colors">
+            <Link href="/free-things-to-do" className="px-8 py-3.5 bg-white border-2 border-[#2d5016] font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>
               Free Activities
             </Link>
             <Link href="/rainy-day-activities" className="px-8 py-3.5 border-2 border-white font-heading text-sm font-semibold uppercase tracking-wider rounded hover:bg-white hover:text-[#2d5016] transition-colors" style={{ color: "#ffffff" }}>

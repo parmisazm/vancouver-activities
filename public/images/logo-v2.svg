@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 65" width="420" height="65">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5016"/>
+      <stop offset="100%" style="stop-color:#5f8f4a"/>
+    </linearGradient>
+    <linearGradient id="mt" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.7)"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded badge icon -->
+  <rect x="0" y="4" width="52" height="52" rx="14" fill="url(#bg)"/>
+  <!-- Mountain + sun inside badge -->
+  <path d="M10 40L20 22L26 30L33 16L44 40Z" fill="#ffffff" opacity="0.92"/>
+  <circle cx="38" cy="18" r="5" fill="#ffffff" opacity="0.35"/>
+  <circle cx="38" cy="18" r="3" fill="#ffffff" opacity="0.6"/>
+  <!-- Water reflection -->
+  <line x1="12" y1="43" x2="42" y2="43" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="16" y1="46" x2="38" y2="46" stroke="#ffffff" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+  <!-- Text block -->
+  <text x="62" y="25" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="-0.3"><tspan fill="#1a1a1a">Vancouver</tspan><tspan fill="#2d5016" dx="5">Activities</tspan></text>
+  <!-- Tagline with dot separator -->
+  <text x="62" y="44" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" fill="#5f8f4a" letter-spacing="1.5">LOCAL</text>
+  <circle cx="107" cy="41" r="1.5" fill="#5f8f4a" opacity="0.5"/>
+  <text x="114" y="44" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" fill="#5f8f4a" letter-spacing="1.5">FAMILY</text>
+  <circle cx="168" cy="41" r="1.5" fill="#5f8f4a" opacity="0.5"/>
+  <text x="175" y="44" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" fill="#5f8f4a" letter-spacing="1.5">FUN</text>
+  <!-- Accent line under tagline -->
+  <line x1="62" y1="50" x2="210" y2="50" stroke="#5f8f4a" stroke-width="2" stroke-linecap="round" opacity="0.15"/>
+</svg>

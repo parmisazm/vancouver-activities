@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 55" width="400" height="55">
+  <defs>
+    <linearGradient id="tree" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5f8f4a"/>
+      <stop offset="100%" style="stop-color:#2d5016"/>
+    </linearGradient>
+  </defs>
+  <!-- Evergreen tree icon — Pacific Northwest feel -->
+  <g transform="translate(0, 3)">
+    <!-- Tree layers -->
+    <polygon points="22,0 12,16 16,16 8,28 14,28 6,42 38,42 30,28 36,28 28,16 32,16" fill="url(#tree)"/>
+    <!-- Trunk -->
+    <rect x="19" y="42" width="6" height="7" rx="1" fill="#8B6914"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="50" y="33" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="30" letter-spacing="-1"><tspan font-weight="800" fill="#1a1a1a">vancouver</tspan><tspan font-weight="300" fill="#1a1a1a">activities</tspan></text>
+  <!-- Subtle tagline -->
+  <text x="50" y="48" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="600" fill="#aaa" letter-spacing="3.5">YOUR LOCAL GUIDE TO FAMILY FUN</text>
+</svg>
