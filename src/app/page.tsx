@@ -295,7 +295,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Newsletter */}
+      {/* Newsletter - commented out until email service is set up
       <section className="bg-[#2d5016] py-16 px-5">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-heading text-3xl font-bold mb-3" style={{ color: "#ffffff" }}>Your Weekend, Sorted. Every Thursday.</h2>
@@ -307,6 +307,7 @@ export default function Home() {
           <p className="mt-4 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>Join 2,000+ Vancouver parents. Unsubscribe anytime.</p>
         </div>
       </section>
+      */}
     </>
   );
 }
