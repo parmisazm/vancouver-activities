@@ -7,15 +7,15 @@ export const metadata: Metadata = {
 };
 
 const activities = [
-  { name: "Science World", desc: "Hands-on science exhibits, live shows, the Ken Spencer Science Park, and the OMNIMAX theatre. Plan for at least 3 hours. Toddler-friendly gallery on the main floor.", type: "Museum", price: "$30/adult, $22/child", age: "All Ages", image: "/images/science-world.jpg" },
-  { name: "Vancouver Aquarium", desc: "Penguins, jellyfish, otters, and a 4D theatre. The new Amazon Gallery is incredible. Feeding shows run throughout the day — check the schedule at the entrance.", type: "Aquarium", price: "$42/adult, $26/child", age: "All Ages", image: "/images/vancouver-aquarium.jpg" },
-  { name: "Kids Market (Granville Island)", desc: "Two floors of toy stores, art studios, and play spaces. The adventure zone has ball pits, slides, and climbing structures. Pair it with lunch at the Public Market.", type: "Shopping/Play", price: "Free entry, activities vary", age: "2-10", image: "/images/kids-market.jpg" },
-  { name: "Crash Crawly's", desc: "Massive indoor play structure with multi-level climbing, slides, ball cannons, and a dedicated toddler area. Socks required. Birthday party central on weekends.", type: "Play Centre", price: "$16/child", age: "2-12", image: "/images/indoor-play.jpg" },
+  { name: "Science World", desc: "Hands-on science exhibits, live shows, the Ken Spencer Science Park, and the OMNIMAX theatre. Plan for at least 3 hours. Toddler-friendly gallery on the main floor.", type: "Museum", price: "$30/adult, $22/child", age: "All Ages", image: "/images/science-experiment.jpg" },
+  { name: "Vancouver Aquarium", desc: "Penguins, jellyfish, otters, and a 4D theatre. The new Amazon Gallery is incredible. Feeding shows run throughout the day — check the schedule at the entrance.", type: "Aquarium", price: "$42/adult, $26/child", age: "All Ages", image: "/images/aquarium.jpg" },
+  { name: "Kids Market (Granville Island)", desc: "Two floors of toy stores, art studios, and play spaces. The adventure zone has ball pits, slides, and climbing structures. Pair it with lunch at the Public Market.", type: "Shopping/Play", price: "Free entry, activities vary", age: "2-10", image: "/images/hood-granville.jpg" },
+  { name: "Crash Crawly's", desc: "Massive indoor play structure with multi-level climbing, slides, ball cannons, and a dedicated toddler area. Socks required. Birthday party central on weekends.", type: "Play Centre", price: "$16/child", age: "2-12", image: "/images/indoor-pool.jpg" },
   { name: "Newton Wave Pool", desc: "Indoor wave pool with waterslides, a warm leisure pool, and spray features. Affordable drop-in rates and family swim sessions on weekends.", type: "Swimming", price: "$6/adult, $3/child", age: "All Ages", image: "/images/newton-wave-pool.jpg" },
   { name: "Watermania (Richmond)", desc: "Wave pool, lazy river, three waterslides, hot tub, and a toddler splash zone. One of Metro Vancouver's best indoor aquatic centres.", type: "Swimming", price: "$7/adult, $4/child", age: "All Ages", image: "/images/indoor-swim.jpg" },
-  { name: "Extreme Air Park", desc: "Trampoline park with foam pits, dodgeball courts, ninja courses, and a rock climbing wall. Waivers required — sign online beforehand to skip the line.", type: "Trampoline", price: "$22/hour", age: "4+", image: "/images/trampoline-park.jpg" },
-  { name: "Vancouver Public Library Storytimes", desc: "Free drop-in storytimes at branches across the city. Songs, stories, and crafts. Different sessions for babies, toddlers, and preschoolers.", type: "Library", price: "Free", age: "0-5", image: "/images/library-storytime.jpg" },
-  { name: "Museum of Vancouver", desc: "Local history exhibits and rotating family-friendly displays. The Neon Vancouver exhibit is a favourite. Quieter alternative to Science World.", type: "Museum", price: "$16/adult, $10/child", age: "5+", image: "/images/museum.jpg" },
+  { name: "Extreme Air Park", desc: "Trampoline park with foam pits, dodgeball courts, ninja courses, and a rock climbing wall. Waivers required — sign online beforehand to skip the line.", type: "Trampoline", price: "$22/hour", age: "4+", image: "/images/trampoline.jpg" },
+  { name: "Vancouver Public Library Storytimes", desc: "Free drop-in storytimes at branches across the city. Songs, stories, and crafts. Different sessions for babies, toddlers, and preschoolers.", type: "Library", price: "Free", age: "0-5", image: "/images/library-kids.jpg" },
+  { name: "Museum of Vancouver", desc: "Local history exhibits and rotating family-friendly displays. The Neon Vancouver exhibit is a favourite. Quieter alternative to Science World.", type: "Museum", price: "$16/adult, $10/child", age: "5+", image: "/images/kids-museum.jpg" },
   { name: "Pottery Painting Cafes", desc: "Paint your own ceramics at spots like Crankpots or Fired Up. Pick a piece, paint it, and they fire it for pickup later. Great for a rainy afternoon.", type: "Creative", price: "$15-40/piece", age: "4+", image: "/images/arts-crafts.jpg" },
 ];
 
@@ -109,8 +109,8 @@ export default function RainyDayBlogPage() {
           <h2 className="font-heading text-2xl font-bold mb-8 text-center">Related Guides</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Best Playgrounds in Vancouver", image: "/images/playground-kids.jpg", href: "/blog/best-playgrounds-vancouver" },
-              { title: "Toddler Activities in Vancouver", image: "/images/kids-playing.jpg", href: "/blog/toddler-activities-vancouver" },
+              { title: "Best Playgrounds in Vancouver", image: "/images/kids-playground.jpg", href: "/blog/best-playgrounds-vancouver" },
+              { title: "Toddler Activities in Vancouver", image: "/images/toddler-play.jpg", href: "/blog/toddler-activities-vancouver" },
               { title: "Free Things to Do This Spring", image: "/images/sunset-beach.jpg", href: "/blog/free-things-to-do-spring" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="bg-white rounded-xl shadow-md overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">

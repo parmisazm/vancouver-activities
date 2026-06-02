@@ -7,23 +7,23 @@ export const metadata: Metadata = {
 };
 
 const playgrounds = [
-  { name: "Charleson Park Playground", hood: "Olympic Village", age: "2-10", highlight: "Water spray park in summer, massive climbing structures, fully fenced for toddlers. Steps from the seawall.", image: "/images/playground-kids.jpg" },
-  { name: "Sutcliffe Park Playground", hood: "Hastings-Sunrise", age: "2-12", highlight: "Enormous zipline, tall climbing towers, spinning disc, and a dedicated toddler area. One of the newest and best-designed in the city.", image: "/images/kids-playing.jpg" },
-  { name: "Granville Island Playground", hood: "Granville Island", age: "2-8", highlight: "Right beside the Kids Market. Colourful structures, sand area, and rope bridges. Grab coffee from the market while the kids play.", image: "/images/granville-island.jpg" },
-  { name: "Maple Grove Park", hood: "Kerrisdale", age: "3-12", highlight: "Huge climbing web, multiple slides, swings, and a water park area. Clean washrooms and lots of parking.", image: "/images/kids-outdoor.jpg" },
-  { name: "Stanley Park Playground", hood: "Stanley Park", age: "2-10", highlight: "Near the miniature train and aquarium. Colourful structures with ocean views. Combine with a seawall walk.", image: "/images/stanley-park.jpg" },
-  { name: "Andy Livingstone Park", hood: "Chinatown/Yaletown", age: "3-10", highlight: "Unique dragon-themed play structures, artificial turf, water features in summer. Right on the Expo Line.", image: "/images/playground-adventure.jpg" },
-  { name: "Quilchena Park", hood: "Arbutus", age: "2-10", highlight: "Quiet neighbourhood gem with a large climbing structure, swings, sand pit, and a huge grassy field for running.", image: "/images/kids-park.jpg" },
-  { name: "Hillcrest Park", hood: "Riley Park", age: "3-12", highlight: "Next to the community centre and pool. Modern equipment, accessible design, water spray in summer.", image: "/images/community-park.jpg" },
-  { name: "Harbour Green Park", hood: "Coal Harbour", age: "2-8", highlight: "Small but beautiful playground right on the waterfront. Stunning mountain views while kids play. Great for toddlers.", image: "/images/harbour-view.jpg" },
-  { name: "Terra Nova Adventure Play", hood: "Richmond", age: "4-12", highlight: "Hands-on adventure playground with logs, ropes, sand, and natural materials. Kids build and create. Unlike anything else in Metro Van.", image: "/images/nature-play.jpg" },
+  { name: "Charleson Park Playground", hood: "Olympic Village", age: "2-10", highlight: "Water spray park in summer, massive climbing structures, fully fenced for toddlers. Steps from the seawall.", image: "/images/kids-playground.jpg" },
+  { name: "Sutcliffe Park Playground", hood: "Hastings-Sunrise", age: "2-12", highlight: "Enormous zipline, tall climbing towers, spinning disc, and a dedicated toddler area. One of the newest and best-designed in the city.", image: "/images/toddler-play.jpg" },
+  { name: "Granville Island Playground", hood: "Granville Island", age: "2-8", highlight: "Right beside the Kids Market. Colourful structures, sand area, and rope bridges. Grab coffee from the market while the kids play.", image: "/images/hood-granville.jpg" },
+  { name: "Maple Grove Park", hood: "Kerrisdale", age: "3-12", highlight: "Huge climbing web, multiple slides, swings, and a water park area. Clean washrooms and lots of parking.", image: "/images/family-park-fun.jpg" },
+  { name: "Stanley Park Playground", hood: "Stanley Park", age: "2-10", highlight: "Near the miniature train and aquarium. Colourful structures with ocean views. Combine with a seawall walk.", image: "/images/nature-park.jpg" },
+  { name: "Andy Livingstone Park", hood: "Chinatown/Yaletown", age: "3-10", highlight: "Unique dragon-themed play structures, artificial turf, water features in summer. Right on the Expo Line.", image: "/images/playground-slide.jpg" },
+  { name: "Quilchena Park", hood: "Arbutus", age: "2-10", highlight: "Quiet neighbourhood gem with a large climbing structure, swings, sand pit, and a huge grassy field for running.", image: "/images/family-local-park.jpg" },
+  { name: "Hillcrest Park", hood: "Riley Park", age: "3-12", highlight: "Next to the community centre and pool. Modern equipment, accessible design, water spray in summer.", image: "/images/family-park-fun.jpg" },
+  { name: "Harbour Green Park", hood: "Coal Harbour", age: "2-8", highlight: "Small but beautiful playground right on the waterfront. Stunning mountain views while kids play. Great for toddlers.", image: "/images/beach-sunset.jpg" },
+  { name: "Terra Nova Adventure Play", hood: "Richmond", age: "4-12", highlight: "Hands-on adventure playground with logs, ropes, sand, and natural materials. Kids build and create. Unlike anything else in Metro Van.", image: "/images/nature-park.jpg" },
 ];
 
 export default function BestPlaygroundsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/playground-kids.jpg')" }}>
+      <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/kids-playground.jpg')" }}>
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 text-center px-5 max-w-3xl">
           <span className="inline-block bg-[#5f8f4a] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">Local Guide</span>

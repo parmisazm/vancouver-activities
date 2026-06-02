@@ -7,22 +7,22 @@ export const metadata: Metadata = {
 };
 
 const activities = [
-  { name: "Granville Island Kids Market", desc: "The toddler paradise of Vancouver. Ball pits, mini slides, a play bakery, train tables, and toy stores. Pair with a walk along the seawall and lunch at the Public Market. Easy to spend a whole morning here.", age: "1-4", type: "Indoor Play", image: "/images/kids-market.jpg" },
-  { name: "Vancouver Public Library Baby & Toddler Time", desc: "Free drop-in sessions at branches across the city. 30 minutes of songs, rhymes, stories, and movement activities. Great for socialization and routine. Check vpl.ca for your nearest branch schedule.", age: "0-3", type: "Free", image: "/images/library-storytime.jpg" },
-  { name: "Charleson Park Splash Pad", desc: "Gentle spray features perfect for toddlers who are not ready for pools. Fully fenced playground right next to it with age-appropriate equipment. Steps from the Olympic Village seawall.", age: "1-4", type: "Outdoor", image: "/images/splash-pad.jpg" },
-  { name: "Crash Crawly's Toddler Zone", desc: "Dedicated toddler area separate from the big kids. Soft play structures, mini slides, ball pit, and a ride-on toy track. Clean, climate-controlled, and open rain or shine. Socks required.", age: "1-4", type: "Indoor Play", image: "/images/indoor-play.jpg" },
-  { name: "Stanley Park Miniature Train", desc: "A gentle 2 km ride through the forest on a scaled-down train. Toddlers love it. Seasonal themes — Easter, Halloween, and Bright Nights at Christmas. Book online during busy seasons.", age: "1+", type: "Attraction", image: "/images/stanley-park.jpg" },
-  { name: "Harbour Green Park", desc: "Small, manageable playground right on the Coal Harbour waterfront. Low structures perfect for new walkers and early climbers. Watch the seaplanes land while the kids play. Coffee shops nearby.", age: "1-3", type: "Outdoor", image: "/images/harbour-view.jpg" },
+  { name: "Granville Island Kids Market", desc: "The toddler paradise of Vancouver. Ball pits, mini slides, a play bakery, train tables, and toy stores. Pair with a walk along the seawall and lunch at the Public Market. Easy to spend a whole morning here.", age: "1-4", type: "Indoor Play", image: "/images/hood-granville.jpg" },
+  { name: "Vancouver Public Library Baby & Toddler Time", desc: "Free drop-in sessions at branches across the city. 30 minutes of songs, rhymes, stories, and movement activities. Great for socialization and routine. Check vpl.ca for your nearest branch schedule.", age: "0-3", type: "Free", image: "/images/library-kids.jpg" },
+  { name: "Charleson Park Splash Pad", desc: "Gentle spray features perfect for toddlers who are not ready for pools. Fully fenced playground right next to it with age-appropriate equipment. Steps from the Olympic Village seawall.", age: "1-4", type: "Outdoor", image: "/images/kids-splash.jpg" },
+  { name: "Crash Crawly's Toddler Zone", desc: "Dedicated toddler area separate from the big kids. Soft play structures, mini slides, ball pit, and a ride-on toy track. Clean, climate-controlled, and open rain or shine. Socks required.", age: "1-4", type: "Indoor Play", image: "/images/indoor-pool.jpg" },
+  { name: "Stanley Park Miniature Train", desc: "A gentle 2 km ride through the forest on a scaled-down train. Toddlers love it. Seasonal themes — Easter, Halloween, and Bright Nights at Christmas. Book online during busy seasons.", age: "1+", type: "Attraction", image: "/images/nature-park.jpg" },
+  { name: "Harbour Green Park", desc: "Small, manageable playground right on the Coal Harbour waterfront. Low structures perfect for new walkers and early climbers. Watch the seaplanes land while the kids play. Coffee shops nearby.", age: "1-3", type: "Outdoor", image: "/images/beach-sunset.jpg" },
   { name: "Newton Wave Pool (Toddler Pool)", desc: "Warm, shallow leisure pool perfect for toddlers. Gentle water features and zero-depth entry so little ones can wade in. Family change rooms with toddler-height fixtures. Very affordable.", age: "1+", type: "Swimming", image: "/images/newton-wave-pool.jpg" },
-  { name: "Music Together Classes", desc: "Parent-and-child music classes offered at community centres across Vancouver. Instruments, singing, movement, and sensory play. Research shows music classes at this age boost language development.", age: "0-4", type: "Class", image: "/images/kids-playing.jpg" },
-  { name: "Pacific Spirit Park (Stroller Trails)", desc: "Wide, flat forest trails perfect for stroller walks. The nature exposure is incredible for toddlers — birds, squirrels, mushrooms, and ferns. The Imperial Trail and Salish Trail are the best for strollers.", age: "All", type: "Outdoor", image: "/images/forest-trail.jpg" },
-  { name: "Rec Centre Drop-In Gym Time", desc: "Many Vancouver community centres offer free or cheap drop-in gym sessions for toddlers. Mats, balls, ride-on toys, and tunnels in a big gym space. Perfect for burning energy on rainy days.", age: "1-4", type: "Free", image: "/images/community-park.jpg" },
+  { name: "Music Together Classes", desc: "Parent-and-child music classes offered at community centres across Vancouver. Instruments, singing, movement, and sensory play. Research shows music classes at this age boost language development.", age: "0-4", type: "Class", image: "/images/toddler-play.jpg" },
+  { name: "Pacific Spirit Park (Stroller Trails)", desc: "Wide, flat forest trails perfect for stroller walks. The nature exposure is incredible for toddlers — birds, squirrels, mushrooms, and ferns. The Imperial Trail and Salish Trail are the best for strollers.", age: "All", type: "Outdoor", image: "/images/nature-park.jpg" },
+  { name: "Rec Centre Drop-In Gym Time", desc: "Many Vancouver community centres offer free or cheap drop-in gym sessions for toddlers. Mats, balls, ride-on toys, and tunnels in a big gym space. Perfect for burning energy on rainy days.", age: "1-4", type: "Free", image: "/images/family-park-fun.jpg" },
 ];
 
 export default function ToddlerActivitiesPage() {
   return (
     <>
-      <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/kids-playing.jpg')" }}>
+      <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/toddler-play.jpg')" }}>
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 text-center px-5 max-w-3xl">
           <span className="inline-block bg-[#5f8f4a] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">Ages 1-3</span>
@@ -90,7 +90,7 @@ export default function ToddlerActivitiesPage() {
           <h2 className="font-heading text-2xl font-bold mb-8 text-center">Related Guides</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Best Playgrounds in Vancouver", image: "/images/playground-kids.jpg", href: "/blog/best-playgrounds-vancouver" },
+              { title: "Best Playgrounds in Vancouver", image: "/images/kids-playground.jpg", href: "/blog/best-playgrounds-vancouver" },
               { title: "Rainy Day Indoor Activities", image: "/images/rainy-day.jpg", href: "/blog/rainy-day-indoor-activities" },
               { title: "Best Splash Pads in Vancouver", image: "/images/kids-swimming.jpg", href: "/blog/best-splash-pads-vancouver" },
             ].map((r) => (

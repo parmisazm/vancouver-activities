@@ -7,14 +7,14 @@ export const metadata: Metadata = {
 };
 
 const splashPads = [
-  { name: "Charleson Park Spray Park", hood: "Olympic Village", hours: "10am-8pm (Jun-Sep)", age: "1-8", highlight: "The best spray park in Vancouver. Multiple water jets, spray arches, and ground fountains. Fully fenced playground right beside it. Steps from the Olympic Village seawall. Clean washrooms on site.", image: "/images/splash-pad.jpg" },
-  { name: "Lumberman's Arch Water Park", hood: "Stanley Park", hours: "10am-6pm (Jun-Sep)", age: "2-10", highlight: "Iconic Stanley Park spray park surrounded by forest. Large area with spray cannons, jets, and dump buckets. Can get very busy on hot days — arrive before noon. Near the miniature train.", image: "/images/stanley-park.jpg" },
-  { name: "Hillcrest Park Spray Park", hood: "Riley Park", hours: "10am-8pm (Jun-Sep)", age: "1-8", highlight: "Modern spray features next to Hillcrest Community Centre. Less crowded than Stanley Park or Charleson. Indoor pool and gym at the community centre if you want to extend the outing.", image: "/images/community-park.jpg" },
-  { name: "Harbour Green Park Water Feature", hood: "Coal Harbour", hours: "10am-6pm (Jun-Sep)", age: "1-5", highlight: "Gentle ground-level fountains perfect for toddlers. Beautiful waterfront setting with mountain views. Small and manageable — great for little ones who are nervous around bigger spray parks.", image: "/images/harbour-view.jpg" },
-  { name: "Sutcliffe Park Spray Park", hood: "Hastings-Sunrise", hours: "10am-8pm (Jun-Sep)", age: "2-10", highlight: "Brand new spray park attached to one of the best playgrounds in the city. Water cannons, spray arches, and ground jets. Less well-known so it is rarely overcrowded.", image: "/images/kids-outdoor.jpg" },
-  { name: "Stanley Park Second Beach Pool", hood: "Stanley Park", hours: "Late May-Labour Day", age: "All Ages", highlight: "Heated outdoor pool right on the beach. Not a splash pad, but the best outdoor swimming in Vancouver. Shallow end for kids. Stunning ocean views. $6.55 adult, $3.25 child.", image: "/images/second-beach.jpg" },
+  { name: "Charleson Park Spray Park", hood: "Olympic Village", hours: "10am-8pm (Jun-Sep)", age: "1-8", highlight: "The best spray park in Vancouver. Multiple water jets, spray arches, and ground fountains. Fully fenced playground right beside it. Steps from the Olympic Village seawall. Clean washrooms on site.", image: "/images/kids-splash.jpg" },
+  { name: "Lumberman's Arch Water Park", hood: "Stanley Park", hours: "10am-6pm (Jun-Sep)", age: "2-10", highlight: "Iconic Stanley Park spray park surrounded by forest. Large area with spray cannons, jets, and dump buckets. Can get very busy on hot days — arrive before noon. Near the miniature train.", image: "/images/nature-park.jpg" },
+  { name: "Hillcrest Park Spray Park", hood: "Riley Park", hours: "10am-8pm (Jun-Sep)", age: "1-8", highlight: "Modern spray features next to Hillcrest Community Centre. Less crowded than Stanley Park or Charleson. Indoor pool and gym at the community centre if you want to extend the outing.", image: "/images/family-park-fun.jpg" },
+  { name: "Harbour Green Park Water Feature", hood: "Coal Harbour", hours: "10am-6pm (Jun-Sep)", age: "1-5", highlight: "Gentle ground-level fountains perfect for toddlers. Beautiful waterfront setting with mountain views. Small and manageable — great for little ones who are nervous around bigger spray parks.", image: "/images/beach-sunset.jpg" },
+  { name: "Sutcliffe Park Spray Park", hood: "Hastings-Sunrise", hours: "10am-8pm (Jun-Sep)", age: "2-10", highlight: "Brand new spray park attached to one of the best playgrounds in the city. Water cannons, spray arches, and ground jets. Less well-known so it is rarely overcrowded.", image: "/images/family-park-fun.jpg" },
+  { name: "Stanley Park Second Beach Pool", hood: "Stanley Park", hours: "Late May-Labour Day", age: "All Ages", highlight: "Heated outdoor pool right on the beach. Not a splash pad, but the best outdoor swimming in Vancouver. Shallow end for kids. Stunning ocean views. $6.55 adult, $3.25 child.", image: "/images/family-beach.jpg" },
   { name: "Kitsilano Pool", hood: "Kitsilano", hours: "Late May-Labour Day", age: "All Ages", highlight: "137m saltwater pool — the longest in Canada. Heated and right on the beach with mountain views. Three lanes for swimming plus a massive shallow area for kids. Free for kids under 3.", image: "/images/kids-swimming.jpg" },
-  { name: "New Brighton Pool", hood: "Hastings", hours: "Late May-Labour Day", age: "All Ages", highlight: "Free outdoor saltwater pool on the east side. Hidden gem that most people do not know about. Playground and picnic area nearby. Lifeguards on duty. No admission fee.", image: "/images/beach-pool.jpg" },
+  { name: "New Brighton Pool", hood: "Hastings", hours: "Late May-Labour Day", age: "All Ages", highlight: "Free outdoor saltwater pool on the east side. Hidden gem that most people do not know about. Playground and picnic area nearby. Lifeguards on duty. No admission fee.", image: "/images/family-beach.jpg" },
 ];
 
 export default function SplashPadsPage() {
@@ -90,7 +90,7 @@ export default function SplashPadsPage() {
           <h2 className="font-heading text-2xl font-bold mb-8 text-center">Related Guides</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Best Playgrounds in Vancouver", image: "/images/playground-kids.jpg", href: "/blog/best-playgrounds-vancouver" },
+              { title: "Best Playgrounds in Vancouver", image: "/images/kids-playground.jpg", href: "/blog/best-playgrounds-vancouver" },
               { title: "Family Hikes Near Vancouver", image: "/images/family-hiking.jpg", href: "/blog/family-hikes-vancouver" },
               { title: "Free Things to Do This Spring", image: "/images/sunset-beach.jpg", href: "/blog/free-things-to-do-spring" },
             ].map((r) => (

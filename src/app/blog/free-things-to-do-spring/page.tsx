@@ -9,19 +9,19 @@ export const metadata: Metadata = {
 const activities = [
   { name: "Cherry Blossom Walks", desc: "Over 40,000 cherry trees bloom across Vancouver from late March to mid-April. The best streets are on West 7th Ave (Arbutus to Cambie), Graveley Street (Commercial to Victoria), and Queen Elizabeth Park. Free, stunning, and perfect for family photos.", image: "/images/spring-blossoms.jpg" },
   { name: "Kitsilano Beach Sunset Walk", desc: "Walk the shoreline from Kits Beach to Jericho Beach during golden hour. Mountain views, driftwood forts, and tide pools along the way. Pack a thermos of hot chocolate for the kids.", image: "/images/sunset-beach.jpg" },
-  { name: "Granville Island Busker Performances", desc: "Street performers set up along the waterfront near the Public Market daily. Musicians, magicians, jugglers, and living statues. Tipping is appreciated but not required. Kids are mesmerized.", image: "/images/granville-island.jpg" },
-  { name: "Stanley Park Nature Walks", desc: "15 km of trails through old-growth forest, plus the seawall for strollers. Look for great blue herons at the heronry near the tennis courts. Free parking before 9 AM on weekdays.", image: "/images/stanley-park.jpg" },
+  { name: "Granville Island Busker Performances", desc: "Street performers set up along the waterfront near the Public Market daily. Musicians, magicians, jugglers, and living statues. Tipping is appreciated but not required. Kids are mesmerized.", image: "/images/hood-granville.jpg" },
+  { name: "Stanley Park Nature Walks", desc: "15 km of trails through old-growth forest, plus the seawall for strollers. Look for great blue herons at the heronry near the tennis courts. Free parking before 9 AM on weekdays.", image: "/images/nature-park.jpg" },
   { name: "Vancouver Art Gallery (Kids Under 12 Free)", desc: "Kids under 12 always get in free. Tuesday evenings are by-donation for everyone. Rotating exhibits plus a dedicated kids gallery with hands-on activities.", image: "/images/art-gallery.jpg" },
-  { name: "Trout Lake Farmers Market", desc: "Opens in May. Local produce, baked goods, live music, and craft vendors. Free entry and free samples. The playground next to the market keeps kids busy while you shop.", image: "/images/trout-lake.jpg" },
-  { name: "Science World Free Outdoor Park", desc: "The Ken Spencer Science Park outside Science World is completely free. Outdoor exhibits, musical instruments, water features, and a playground. You do not need to pay admission.", image: "/images/science-world.jpg" },
+  { name: "Trout Lake Farmers Market", desc: "Opens in May. Local produce, baked goods, live music, and craft vendors. Free entry and free samples. The playground next to the market keeps kids busy while you shop.", image: "/images/farmers-market.jpg" },
+  { name: "Science World Free Outdoor Park", desc: "The Ken Spencer Science Park outside Science World is completely free. Outdoor exhibits, musical instruments, water features, and a playground. You do not need to pay admission.", image: "/images/science-experiment.jpg" },
   { name: "Community Centre Free Swim Times", desc: "Vancouver Parks Board offers free family swim at community pools on select evenings. Check your local centre schedule online. Bring your own towels and locks.", image: "/images/kids-swimming.jpg" },
-  { name: "Lynn Canyon Suspension Bridge", desc: "The free alternative to Capilano Suspension Bridge. Just as beautiful, with swimming holes, waterfalls, and an ecology centre with free exhibits. Saves a family of four over $200.", image: "/images/lynn-canyon.jpg" },
-  { name: "New Brighton Pool & Beach", desc: "Outdoor saltwater pool right on the beach. Open May through September. Free admission, lifeguards on duty. The beach has a playground and picnic tables. Hidden gem that most tourists miss.", image: "/images/beach-pool.jpg" },
-  { name: "Playground Hopping", desc: "Make a day of visiting multiple playgrounds. Charleson Park, Sutcliffe Park, and Granville Island are all top-tier. Pack snacks and a picnic blanket. Zero dollars, maximum fun.", image: "/images/playground-kids.jpg" },
-  { name: "Library Programs", desc: "Vancouver Public Library runs free storytimes, craft sessions, LEGO clubs, and coding workshops for kids. Every branch has different programs. Check vpl.ca for schedules.", image: "/images/library-storytime.jpg" },
-  { name: "Second Beach & Third Beach", desc: "Two beautiful beaches in Stanley Park. Second Beach has a playground, picnic area, and the heated outdoor pool ($). Third Beach is quieter with stunning sunset views. Both beaches are free.", image: "/images/second-beach.jpg" },
-  { name: "Bird Watching at Reifel Bird Sanctuary", desc: "Not free ($5/adult, free for kids under 3) but worth mentioning for spring. Thousands of migratory birds, baby owls, and herons. Bring binoculars and bird guides from the library.", image: "/images/nature-walk.jpg" },
-  { name: "Seawall Bike Ride", desc: "Rent bikes (or bring your own) and ride the 28 km seawall from Coal Harbour through Stanley Park to Spanish Banks. The bike lane is separated from pedestrians. Helmets required by law in BC.", image: "/images/seawall-bike.jpg" },
+  { name: "Lynn Canyon Suspension Bridge", desc: "The free alternative to Capilano Suspension Bridge. Just as beautiful, with swimming holes, waterfalls, and an ecology centre with free exhibits. Saves a family of four over $200.", image: "/images/hiking-trail.jpg" },
+  { name: "New Brighton Pool & Beach", desc: "Outdoor saltwater pool right on the beach. Open May through September. Free admission, lifeguards on duty. The beach has a playground and picnic tables. Hidden gem that most tourists miss.", image: "/images/family-beach.jpg" },
+  { name: "Playground Hopping", desc: "Make a day of visiting multiple playgrounds. Charleson Park, Sutcliffe Park, and Granville Island are all top-tier. Pack snacks and a picnic blanket. Zero dollars, maximum fun.", image: "/images/kids-playground.jpg" },
+  { name: "Library Programs", desc: "Vancouver Public Library runs free storytimes, craft sessions, LEGO clubs, and coding workshops for kids. Every branch has different programs. Check vpl.ca for schedules.", image: "/images/library-kids.jpg" },
+  { name: "Second Beach & Third Beach", desc: "Two beautiful beaches in Stanley Park. Second Beach has a playground, picnic area, and the heated outdoor pool ($). Third Beach is quieter with stunning sunset views. Both beaches are free.", image: "/images/family-beach.jpg" },
+  { name: "Bird Watching at Reifel Bird Sanctuary", desc: "Not free ($5/adult, free for kids under 3) but worth mentioning for spring. Thousands of migratory birds, baby owls, and herons. Bring binoculars and bird guides from the library.", image: "/images/nature-park.jpg" },
+  { name: "Seawall Bike Ride", desc: "Rent bikes (or bring your own) and ride the 28 km seawall from Coal Harbour through Stanley Park to Spanish Banks. The bike lane is separated from pedestrians. Helmets required by law in BC.", image: "/images/family-biking.jpg" },
 ];
 
 export default function FreeThingsSpringPage() {
@@ -79,7 +79,7 @@ export default function FreeThingsSpringPage() {
           <h2 className="font-heading text-2xl font-bold mb-8 text-center">Related Guides</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Best Playgrounds in Vancouver", image: "/images/playground-kids.jpg", href: "/blog/best-playgrounds-vancouver" },
+              { title: "Best Playgrounds in Vancouver", image: "/images/kids-playground.jpg", href: "/blog/best-playgrounds-vancouver" },
               { title: "Family Hikes Near Vancouver", image: "/images/family-hiking.jpg", href: "/blog/family-hikes-vancouver" },
               { title: "Rainy Day Indoor Activities", image: "/images/rainy-day.jpg", href: "/blog/rainy-day-indoor-activities" },
             ].map((r) => (
