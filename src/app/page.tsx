@@ -122,8 +122,8 @@ export default function Home() {
               Every recommendation comes from someone who&apos;s actually taken their kids there. We know which playgrounds have shade, which restaurants actually have high chairs, and which &quot;easy&quot; hikes are lying.
             </p>
             <div className="flex gap-3 mt-6">
-              <Link href="/things-to-do" className="px-4 py-2 md:px-6 md:py-3 btn-primary font-heading text-xs md:text-sm font-semibold uppercase tracking-wide md:tracking-wider rounded whitespace-nowrap">Browse Activities</Link>
-              <Link href="/this-weekend" className="px-4 py-2 md:px-6 md:py-3 bg-white border-2 border-[#2d5016] font-heading text-xs md:text-sm font-semibold uppercase tracking-wide md:tracking-wider rounded hover:bg-[#2d5016] transition-colors whitespace-nowrap" style={{ color: "#2d5016" }}>This Weekend</Link>
+              <Link href="/things-to-do" className="px-5 py-2.5 md:px-6 md:py-3 btn-primary font-heading text-[13px] md:text-sm font-semibold uppercase tracking-wide rounded">Browse Activities</Link>
+              <Link href="/this-weekend" className="px-5 py-2.5 md:px-6 md:py-3 bg-white border-2 border-[#2d5016] font-heading text-[13px] md:text-sm font-semibold uppercase tracking-wide rounded hover:bg-[#2d5016] transition-colors" style={{ color: "#2d5016" }}>This Weekend</Link>
             </div>
           </div>
           <div className="flex-1">

@@ -79,18 +79,3 @@ section[class*="bg-[#2d5016]"] a[class*="bg-white"] {
   color: #2d5016 !important;
 }
 
-/* === MOBILE CTA BUTTONS === */
-@media (max-width: 768px) {
-  a[class*="px-8"],
-  a[class*="px-7"],
-  a[class*="px-6"],
-  button[class*="px-8"],
-  button[class*="px-6"] {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
-    padding-top: 0.65rem !important;
-    padding-bottom: 0.65rem !important;
-    font-size: 1.125rem !important;
-    letter-spacing: 0.01em !important;
-  }
-}
