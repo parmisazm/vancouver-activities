@@ -82,8 +82,10 @@ section[class*="bg-[#2d5016]"] a[class*="bg-white"] {
 /* === MOBILE CTA BUTTONS === */
 @media (max-width: 768px) {
   a[class*="px-8"],
+  a[class*="px-7"],
+  a[class*="px-6"],
   button[class*="px-8"],
-  a[class*="px-7"] {
+  button[class*="px-6"] {
     padding-left: 0.875rem !important;
     padding-right: 0.875rem !important;
     padding-top: 0.5rem !important;
