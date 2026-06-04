@@ -28,8 +28,11 @@ export const metadata: Metadata = {
   description: "Find the best things to do in Vancouver, BC. Kids activities, family events, outdoor adventures, indoor play, free activities, birthday parties, and seasonal guides. Updated weekly.",
   keywords: "things to do in Vancouver, Vancouver activities, kids activities Vancouver, indoor activities Vancouver, free things to do Vancouver, Vancouver events this weekend, rainy day activities Vancouver, birthday party venues Vancouver, summer camps Vancouver",
   icons: {
-    icon: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Vancouver Activities | Family Activities & Events",
