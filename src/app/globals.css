@@ -86,12 +86,12 @@ section[class*="bg-[#2d5016]"] a[class*="bg-white"] {
   a[class*="px-6"],
   button[class*="px-8"],
   button[class*="px-6"] {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-    padding-top: 0.75rem !important;
-    padding-bottom: 0.75rem !important;
-    font-size: 1.25rem !important;
-    letter-spacing: 0.03em !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.02em !important;
     white-space: nowrap !important;
   }
 }
