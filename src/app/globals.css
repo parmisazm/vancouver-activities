@@ -82,13 +82,14 @@ section[class*="bg-[#2d5016]"] a[class*="bg-white"] {
 /* === MOBILE CTA BUTTONS === */
 @media (max-width: 768px) {
   a[class*="px-8"],
-  button[class*="px-8"] {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
-    padding-top: 0.625rem !important;
-    padding-bottom: 0.625rem !important;
-    font-size: 0.7rem !important;
-    letter-spacing: 0.04em !important;
+  button[class*="px-8"],
+  a[class*="px-7"] {
+    padding-left: 0.875rem !important;
+    padding-right: 0.875rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    font-size: 0.625rem !important;
+    letter-spacing: 0.02em !important;
     white-space: nowrap !important;
   }
 }
