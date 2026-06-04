@@ -48,7 +48,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-40">
-      <div className="max-w-[1500px] mx-auto px-4 flex items-center h-44">
+      <div className="max-w-[1500px] mx-auto px-4 flex items-center h-24 lg:h-44">
         {/* Left — Things To Do, This Weekend */}
         <nav className="hidden lg:flex items-center gap-2 flex-1 justify-end">
           {leftNav.map((item) => (
@@ -70,7 +70,7 @@ export default function Navbar() {
 
         {/* Center — Logo */}
         <Link href="/" className="flex-shrink-0 mx-4">
-          <img src="/images/logo.jpg" alt="Vancouver Activities" className="h-[160px] w-auto" />
+          <img src="/images/logo.jpg" alt="Vancouver Activities" className="h-[70px] lg:h-[160px] w-auto" />
         </Link>
 
         {/* Right — Events, Guides, Contact Us */}
@@ -97,7 +97,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-2"
+          className="lg:hidden p-2 ml-auto"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
         >
