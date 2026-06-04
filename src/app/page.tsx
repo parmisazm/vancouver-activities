@@ -90,7 +90,7 @@ export default function Home() {
       {/* Quick Discovery — Tag Pills */}
       <section className="py-6 px-5 bg-[#f8f9fa] border-b border-gray-100">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center gap-2.5 flex-nowrap">
+          <div className="flex items-center justify-center gap-2.5 flex-wrap">
             <span className="text-sm text-gray-400 font-medium mr-1">Popular:</span>
             {quickLinks.map((link) => (
               <Link
