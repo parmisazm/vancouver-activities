@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import StructuredData from "@/components/StructuredData";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "What is the best playground in Vancouver for toddlers?", acceptedAnswer: { "@type": "Answer", text: "Charleson Park and Harbour Green Park are both excellent for toddlers. They have dedicated fenced areas with age-appropriate equipment and soft surfaces." } },
+    { "@type": "Question", name: "Are Vancouver playgrounds free?", acceptedAnswer: { "@type": "Answer", text: "Yes, all public playgrounds in Vancouver are completely free. Some are located next to community centres that offer paid programs." } },
+    { "@type": "Question", name: "Which playgrounds have water spray parks?", acceptedAnswer: { "@type": "Answer", text: "Charleson Park, Hillcrest Park, and Stanley Park all have water spray features that run during summer months (typically June through September)." } },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "15 Best Playgrounds in Vancouver for Kids (2026)",
@@ -22,6 +33,7 @@ const playgrounds = [
 export default function BestPlaygroundsPage() {
   return (
     <>
+      <StructuredData data={faqSchema} />
       {/* Hero */}
       <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/kids-playground.jpg')" }}>
         <div className="absolute inset-0 bg-black/55" />

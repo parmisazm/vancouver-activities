@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import StructuredData from "@/components/StructuredData";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "When is cherry blossom season in Vancouver?", acceptedAnswer: { "@type": "Answer", text: "Cherry blossoms typically bloom from late March to mid-April in Vancouver. Peak bloom varies by variety — early bloomers start in March, while late varieties can last into early May." } },
+    { "@type": "Question", name: "What is free to do in Vancouver with kids?", acceptedAnswer: { "@type": "Answer", text: "Playgrounds, beaches, library programs, Stanley Park trails, cherry blossom walks, community centre free swim times, Granville Island buskers, and the outdoor Science World park are all completely free." } },
+    { "@type": "Question", name: "Is Lynn Canyon Bridge really free?", acceptedAnswer: { "@type": "Answer", text: "Yes, Lynn Canyon Suspension Bridge and park are 100% free, unlike the Capilano Suspension Bridge which charges $62 per adult." } },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "15 Free Things to Do in Vancouver This Spring",
@@ -27,6 +38,7 @@ const activities = [
 export default function FreeThingsSpringPage() {
   return (
     <>
+      <StructuredData data={faqSchema} />
       <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/spring-blossoms.jpg')" }}>
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 text-center px-5 max-w-3xl">

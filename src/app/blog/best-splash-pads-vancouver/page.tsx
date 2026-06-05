@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import StructuredData from "@/components/StructuredData";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Are splash pads free in Vancouver?", acceptedAnswer: { "@type": "Answer", text: "Yes, all spray parks and splash pads in Vancouver parks are completely free. Outdoor pools charge a small fee ($3-7) but some like New Brighton Pool are free." } },
+    { "@type": "Question", name: "When do splash pads open in Vancouver?", acceptedAnswer: { "@type": "Answer", text: "Most splash pads operate from mid-June through September, depending on weather. Outdoor pools typically open late May and close on Labour Day weekend." } },
+    { "@type": "Question", name: "What is the best splash pad for toddlers?", acceptedAnswer: { "@type": "Answer", text: "Harbour Green Park has the gentlest water features, perfect for toddlers. Charleson Park is also excellent with its fully fenced area and mix of gentle and active spray features." } },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "Best Splash Pads & Water Parks in Vancouver (2026)",
@@ -20,6 +31,7 @@ const splashPads = [
 export default function SplashPadsPage() {
   return (
     <>
+      <StructuredData data={faqSchema} />
       <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/kids-swimming.jpg')" }}>
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 text-center px-5 max-w-3xl">

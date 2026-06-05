@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import StructuredData from "@/components/StructuredData";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "What are the best free indoor activities for kids in Vancouver?", acceptedAnswer: { "@type": "Answer", text: "Vancouver Public Library storytimes, rec centre drop-in gym times, the Metropolis at Metrotown play area, and the Vancouver Art Gallery (free for kids under 12) are all excellent free options." } },
+    { "@type": "Question", name: "What indoor activities work for toddlers in Vancouver?", acceptedAnswer: { "@type": "Answer", text: "Kids Market on Granville Island, Crash Crawly's toddler area, library storytimes, and indoor swimming at Newton Wave Pool or Watermania are all great for toddlers (ages 1-3)." } },
+    { "@type": "Question", name: "How many rainy days does Vancouver get per year?", acceptedAnswer: { "@type": "Answer", text: "Vancouver averages about 166 rainy days per year, mostly between October and April. That is why having a solid list of indoor activities is essential for families living here." } },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "30 Rainy Day Activities for Kids in Vancouver",
@@ -22,6 +33,7 @@ const activities = [
 export default function RainyDayBlogPage() {
   return (
     <>
+      <StructuredData data={faqSchema} />
       <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/rainy-day.jpg')" }}>
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 text-center px-5 max-w-3xl">

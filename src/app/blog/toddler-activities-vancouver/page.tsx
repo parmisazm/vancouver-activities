@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import StructuredData from "@/components/StructuredData";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "What are the best indoor activities for toddlers in Vancouver?", acceptedAnswer: { "@type": "Answer", text: "Granville Island Kids Market, Crash Crawly's toddler zone, library storytimes, and rec centre drop-in gym times are the top indoor options for toddlers in Vancouver." } },
+    { "@type": "Question", name: "Are there free toddler activities in Vancouver?", acceptedAnswer: { "@type": "Answer", text: "Yes. Library Baby & Toddler Time, community centre drop-in gym, playground visits, splash pads, and Pacific Spirit Park walks are all completely free." } },
+    { "@type": "Question", name: "What age is considered a toddler?", acceptedAnswer: { "@type": "Answer", text: "Generally ages 1 to 3. Activities on this list are designed for children who are walking but not yet in preschool (ages 4-5)." } },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "Best Toddler Activities in Vancouver (Ages 1-3)",
@@ -22,6 +33,7 @@ const activities = [
 export default function ToddlerActivitiesPage() {
   return (
     <>
+      <StructuredData data={faqSchema} />
       <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/toddler-play.jpg')" }}>
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 text-center px-5 max-w-3xl">

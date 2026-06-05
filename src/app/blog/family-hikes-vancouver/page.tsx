@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import StructuredData from "@/components/StructuredData";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "What is the easiest family hike in Vancouver?", acceptedAnswer: { "@type": "Answer", text: "The Stanley Park Seawall (fully paved, flat, stroller-friendly) and Pacific Spirit Regional Park (wide forest trails) are the easiest options. Rice Lake Loop is another great easy option with a stroller-accessible gravel path." } },
+    { "@type": "Question", name: "Are there stroller-friendly hikes in Vancouver?", acceptedAnswer: { "@type": "Answer", text: "Yes. The Stanley Park Seawall, Pacific Spirit Park main trails, Rice Lake Loop, and Burns Bog boardwalk are all stroller-friendly." } },
+    { "@type": "Question", name: "Is Lynn Canyon free?", acceptedAnswer: { "@type": "Answer", text: "Yes, Lynn Canyon Suspension Bridge and park are completely free. This is the local alternative to the paid Capilano Suspension Bridge ($62/adult)." } },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "10 Best Family Hikes Near Vancouver | Easy Trails",
@@ -22,6 +33,7 @@ const hikes = [
 export default function FamilyHikesPage() {
   return (
     <>
+      <StructuredData data={faqSchema} />
       <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/family-hiking.jpg')" }}>
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 text-center px-5 max-w-3xl">

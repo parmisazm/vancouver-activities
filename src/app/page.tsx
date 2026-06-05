@@ -1,5 +1,43 @@
 import Link from "next/link";
 import HeroSlider from "@/components/HeroSlider";
+import StructuredData from "@/components/StructuredData";
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Vancouver Activities",
+  description: "Your local guide to the best family activities, events, and weekend fun in Vancouver, BC.",
+  url: "https://www.vancouveractivities.com",
+  logo: "https://www.vancouveractivities.com/images/logo.jpg",
+  image: "https://www.vancouveractivities.com/images/logo.jpg",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Vancouver",
+    addressRegion: "BC",
+    addressCountry: "CA",
+  },
+  areaServed: {
+    "@type": "City",
+    name: "Vancouver",
+    "@id": "https://www.wikidata.org/wiki/Q24639",
+  },
+  sameAs: [
+    "https://instagram.com/vancouveractivities",
+    "https://facebook.com/profile.php?id=61588732515283",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Vancouver Activities",
+  url: "https://www.vancouveractivities.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://www.vancouveractivities.com/events?search={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
 
 const categories = [
   { label: "Kids Activities", desc: "Science World, aquarium, playgrounds & more by age group", href: "/kids-activities", image: "/images/kids-playground.jpg", className: "col-span-4 row-span-2" },
@@ -85,6 +123,8 @@ const localTips = [
 export default function Home() {
   return (
     <>
+      <StructuredData data={localBusinessSchema} />
+      <StructuredData data={websiteSchema} />
       <HeroSlider />
 
       {/* Quick Discovery — Tag Pills */}
