@@ -54,6 +54,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.variable} ${openSans.variable} ${adamina.variable}`}>
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y92NGG86WG" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y92NGG86WG');`,
+          }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col font-sans">
         <Banner />
         <Navbar />
