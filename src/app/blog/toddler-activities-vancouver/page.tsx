@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Toddler Activities in Vancouver (Ages 1-3) | Vancouver Activities",
-  description: "The best things to do with toddlers in Vancouver BC. Indoor play spaces, outdoor parks, swimming, library storytimes, and more for ages 1-3.",
+  title: "Best Toddler Activities in Vancouver (Ages 1-3)",
+  description: "Best toddler activities in Vancouver BC for ages 1-3. Indoor play spaces, outdoor parks, splash pads, library storytimes, and swimming. Local parent picks.",
 };
 
 const activities = [

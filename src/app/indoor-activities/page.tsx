@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Indoor Activities Vancouver | 40+ Rainy Day Ideas (2026)",
-  description: "Discover 40+ indoor activities in Vancouver for families. Museums, play spaces, trampoline parks, creative studios, and swimming pools. Perfect for Vancouver's 166 rainy days a year.",
+  description: "40+ indoor activities in Vancouver for families. Museums, play spaces, trampoline parks, creative studios, and pools. Perfect for Vancouver's rainy days.",
 };
 
 const museums = [

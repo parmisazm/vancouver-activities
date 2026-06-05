@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Family-Friendly Restaurants Vancouver | Kid-Approved Dining",
-  description: "Find the best family-friendly restaurants in Vancouver. Kid-approved dining with high chairs, kids menus, play areas, and patios. Organized by neighbourhood with price ranges.",
+  description: "Best family-friendly restaurants in Vancouver. Kid-approved dining with high chairs, kids menus, play areas, and patios. Organized by neighbourhood.",
 };
 
 const restaurants = [

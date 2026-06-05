@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Summer Camps Vancouver 2026 | Best Day Camps for Kids",
-  description: "Find the best summer camps in Vancouver for 2026. Sports, arts, STEM, nature, and multi-activity day camps for kids ages 4-16. Registration info, prices, and what to pack.",
+  description: "Best summer camps in Vancouver 2026. Sports, arts, STEM, nature, and multi-activity day camps for kids ages 4-16. Prices, registration dates, and tips.",
 };
 
 const camps = [

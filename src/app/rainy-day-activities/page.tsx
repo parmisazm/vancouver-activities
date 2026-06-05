@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Rainy Day Activities Vancouver | 40+ Indoor Ideas for Families",
-  description: "40+ rainy day activities in Vancouver for families. Museums, indoor play spaces, creative activities, swimming pools, cooking classes, and movies. Beat the Vancouver rain with these ideas.",
+  description: "40+ rainy day activities in Vancouver for families. Museums, play spaces, swimming pools, creative studios, and movies. Beat the rain with our indoor guide.",
 };
 
 const categories = [

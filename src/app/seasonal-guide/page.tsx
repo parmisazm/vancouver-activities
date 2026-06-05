@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Vancouver Seasonal Guide | Best Activities by Season (2026)",
-  description: "Discover the best things to do in Vancouver by season. Cherry blossoms in spring, beaches in summer, foliage in fall, and skiing in winter. Your year-round Vancouver activity guide.",
+  description: "Best things to do in Vancouver by season. Cherry blossoms in spring, beaches in summer, foliage in fall, and skiing in winter. Your year-round guide.",
 };
 
 const seasons = [

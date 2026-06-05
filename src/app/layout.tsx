@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   verification: {
     google: "t4Cv7B4728ggmllGGJo5s2kXJ3dQ8ZgEP2MI67IusK8",
   },
-  title: "Vancouver Activities | Things to Do in Vancouver BC (2026 Local Guide)",
-  description: "Find the best things to do in Vancouver, BC. Kids activities, family events, outdoor adventures, indoor play, free activities, birthday parties, and seasonal guides. Updated weekly.",
+  title: "Vancouver Activities | Things to Do in Vancouver BC",
+  description: "Find the best things to do in Vancouver, BC. Kids activities, family events, outdoor adventures, indoor play, free activities, and seasonal guides. Updated weekly.",
   keywords: "things to do in Vancouver, Vancouver activities, kids activities Vancouver, indoor activities Vancouver, free things to do Vancouver, Vancouver events this weekend, rainy day activities Vancouver, birthday party venues Vancouver, summer camps Vancouver",
   icons: {
     icon: [

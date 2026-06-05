@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "10 Best Family Hikes Near Vancouver (Easy to Moderate) | Vancouver Activities",
+  title: "10 Best Family Hikes Near Vancouver | Easy Trails",
   description: "Kid-friendly hiking trails near Vancouver BC with waterfalls, suspension bridges, and ocean views. Stroller-friendly options, trail details, and what to pack.",
 };
 

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Birthday Party Venues Vancouver | Best Kids Party Ideas (2026)",
-  description: "Find the best birthday party venues in Vancouver for kids. Indoor play centres, sports facilities, creative studios, science parties, and nature-themed celebrations. Compare prices and age ranges.",
+  title: "Birthday Party Venues Vancouver | Kids Party Ideas",
+  description: "Best birthday party venues in Vancouver for kids. Compare 12 indoor play centres, sports, science, and nature venues with prices and ages. Plan the perfect party.",
 };
 
 const venues = [

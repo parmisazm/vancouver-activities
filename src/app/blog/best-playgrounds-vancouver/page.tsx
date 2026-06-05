@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "15 Best Playgrounds in Vancouver for Kids (2026) | Vancouver Activities",
-  description: "Discover the best playgrounds in Vancouver BC ranked by local parents. From Granville Island to Stanley Park, find the perfect playground for your kids with photos, tips, and age recommendations.",
+  title: "15 Best Playgrounds in Vancouver for Kids (2026)",
+  description: "Best playgrounds in Vancouver ranked by local parents. Equipment, toddler areas, washrooms, shade, and parking at each. Find your new favourite playground.",
 };
 
 const playgrounds = [

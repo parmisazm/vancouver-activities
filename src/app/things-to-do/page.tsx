@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Things to Do in Vancouver BC | Activities & Attractions (2026 Guide)",
-  description: "Discover the best things to do in Vancouver, BC. From outdoor adventures and kids activities to free attractions, birthday parties, and rainy day ideas. Your complete Vancouver activity guide.",
+  title: "Things to Do in Vancouver BC | Activities & Attractions",
+  description: "Your complete guide to things to do in Vancouver, BC. Outdoor adventures, kids activities, free attractions, birthday parties, and rainy day ideas. Explore now.",
 };
 
 const categories = [

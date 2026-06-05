@@ -6,6 +6,7 @@ import Link from "next/link";
 const slides = [
   {
     image: "/images/hero-1.jpg",
+    alt: "Families enjoying outdoor activities in Vancouver BC",
     title: "What Should We Do This Weekend?",
     desc: "The question every Vancouver parent asks on Thursday night. We have the answer — updated weekly with local events, activities, and hidden gems.",
     btn1: { label: "This Weekend", href: "/this-weekend" },
@@ -13,6 +14,7 @@ const slides = [
   },
   {
     image: "/images/hero-2.jpg",
+    alt: "Family exploring Science World Vancouver on a rainy day",
     title: "It's Raining. Again. Now What?",
     desc: "166 rainy days a year means we've mastered indoor fun. Science World, trampoline parks, play cafes, pottery, swimming — 40+ ideas ready.",
     btn1: { label: "Rainy Day Ideas", href: "/rainy-day-activities" },
@@ -20,6 +22,7 @@ const slides = [
   },
   {
     image: "/images/hero-3.jpg",
+    alt: "Lynn Canyon Suspension Bridge in North Vancouver BC",
     title: "Skip Capilano. Try Lynn Canyon.",
     desc: "Same suspension bridge. Completely free. Plus swimming holes, waterfalls, and no tourist crowds. The local's guide to outdoor Vancouver.",
     btn1: { label: "Outdoor Adventures", href: "/outdoor-adventures" },
@@ -27,6 +30,7 @@ const slides = [
   },
   {
     image: "/images/hero-4.jpg",
+    alt: "Kids birthday party at indoor play centre in Vancouver",
     title: "Birthdays, Camps & Weekend Plans",
     desc: "Birthday party venues rated by real parents. Summer camp listings across Metro Van. Weekend events updated every Thursday.",
     btn1: { label: "Birthday Parties", href: "/birthday-parties" },
@@ -59,7 +63,7 @@ export default function HeroSlider() {
         >
           <img
             src={slide.image}
-            alt={slide.title}
+            alt={slide.alt}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/40 flex items-center justify-center text-center px-5">

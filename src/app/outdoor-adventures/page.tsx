@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Outdoor Adventures in Vancouver BC | Hiking, Biking, Kayaking & Beaches",
-  description: "Explore the best outdoor adventures in Vancouver, BC. Family-friendly hiking trails, biking paths, kayaking, beaches, and nature walks. Mountains to ocean — all in one city.",
+  title: "Outdoor Adventures Vancouver | Hiking, Biking & Beaches",
+  description: "Best outdoor adventures in Vancouver, BC. Family-friendly hiking trails, biking paths, kayaking, beaches, and nature walks. Explore our guide now.",
 };
 
 const adventures = [

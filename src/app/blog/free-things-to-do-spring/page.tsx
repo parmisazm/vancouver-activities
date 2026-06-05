@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "15 Free Things to Do in Vancouver This Spring (2026) | Vancouver Activities",
-  description: "Cherry blossoms, beach walks, markets, and festivals — completely free. Our top picks for enjoying Vancouver without spending a dime this spring.",
+  title: "15 Free Things to Do in Vancouver This Spring",
+  description: "15 free things to do in Vancouver this spring. Cherry blossoms, beach walks, farmers markets, and festivals. Enjoy Vancouver without spending a dime.",
 };
 
 const activities = [

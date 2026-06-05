@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Splash Pads & Water Parks in Vancouver (2026) | Vancouver Activities",
+  title: "Best Splash Pads & Water Parks in Vancouver (2026)",
   description: "Find the best splash pads and spray parks in Vancouver BC. Free outdoor water play for kids with locations, hours, age recommendations, and parking tips.",
 };
 

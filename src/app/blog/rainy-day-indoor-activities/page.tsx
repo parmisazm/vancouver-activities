@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "30 Rainy Day Activities for Kids in Vancouver (2026) | Vancouver Activities",
+  title: "30 Rainy Day Activities for Kids in Vancouver",
   description: "It's raining in Vancouver again. Here are 30 indoor activities for kids — from Science World to trampoline parks, play cafes, and free library programs.",
 };
 
