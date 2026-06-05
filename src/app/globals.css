@@ -63,13 +63,7 @@ a {
   color: #2d5016 !important;
 }
 
-/* === GLOBAL OVERRIDES FOR INLINE-STYLED ELEMENTS === */
-/* Any element with inline style color stays as-is */
-[style*="color"] {
-  color: unset;
-}
-
-/* Green bg sections — all direct text is white */
+/* === GREEN SECTION OVERRIDES === */
 section[class*="bg-[#2d5016]"] > div,
 section[class*="bg-[#2d5016]"] h2,
 section[class*="bg-[#2d5016]"] p,
@@ -77,10 +71,14 @@ section[class*="bg-[#2d5016]"] form {
   color: #ffffff;
 }
 
-/* But white elements inside keep their own styling */
-section[class*="bg-[#2d5016]"] input,
-section[class*="bg-[#2d5016]"] button[class*="bg-white"],
-section[class*="bg-[#2d5016]"] a[class*="bg-white"] {
+/* White bg buttons in green sections */
+section[class*="bg-[#2d5016]"] a[class*="bg-white"],
+section[class*="bg-[#2d5016]"] button[class*="bg-white"] {
   color: #2d5016 !important;
+}
+
+/* White border outline buttons in green sections */
+section[class*="bg-[#2d5016]"] a[class*="border-white"] {
+  color: #ffffff !important;
 }
 
